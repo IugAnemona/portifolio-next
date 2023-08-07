@@ -4,13 +4,29 @@ import Image from "next/image";
 import { BsLinkedin, BsGithub, BsInstagram } from "react-icons/bs";
 import { MenuLinks } from "./MenuLinks";
 import { RedesLinks } from "./RedesLinks";
+import { useState, useEffect } from "react";
 
 export const Menu = () => {
+  const [scrolling, setScrolling] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const isScrolling = window.scrollY > 10; // Define o ponto de rolagem para mudar a cor (100px no exemplo)
+      setScrolling(isScrolling);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
     <S.Section>
       <GS.WithoutContainer>
-        <S.Header>
-          <S.Logo href="/">
+        <S.Header scroll={scrolling}>
+          <S.Logo scroll={scrolling} href="/">
             <Image
               src="/icon.png"
               width={100}

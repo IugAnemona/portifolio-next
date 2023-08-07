@@ -5,11 +5,18 @@ import Link from "next/link";
 export const Section = styled.section`
   width: 100%;
   position: fixed;
-  background-color: ${theme.blackMain};
   z-index: 1050;
 `;
 
-export const Header = styled.header`
+interface ScrollProps {
+  scroll: boolean;
+}
+
+export const Header = styled.header<ScrollProps>`
+  transition: all 1s;
+  background-color: ${(props) => (props.scroll ? theme.grey : theme.blackMain)};
+  border: solid 1px ${(props) => (props.scroll ? theme.pink : theme.blackMain)};
+  border-top: none;
   width: 100%;
   height: 100%;
   display: flex;
@@ -17,9 +24,13 @@ export const Header = styled.header`
   padding: 10px 0;
   max-width: 1440px;
   position: relative;
+  border-bottom-left-radius: ${(props) => (props.scroll ? "10px" : 0)};
+  border-bottom-right-radius: ${(props) => (props.scroll ? "10px" : 0)};
 
   @media ${device.mobile} {
     position: static;
+    border: none;
+    border-radius: 0;
   }
 `;
 

@@ -1,4 +1,4 @@
-import { theme } from "@/styles/theme";
+import { device, theme } from "@/styles/theme";
 import { styled } from "styled-components";
 
 export const ProjectsContainer = styled.section`
@@ -8,6 +8,12 @@ export const ProjectsContainer = styled.section`
   padding: 3rem;
   display: flex;
   flex-direction: column;
+  margin-bottom: 3rem;
+  position: relative;
+
+  @media ${device.mobile} {
+    padding: 3rem 0;
+  }
 
   h2 {
     font-size: 2.2rem;
@@ -17,6 +23,9 @@ export const ProjectsContainer = styled.section`
     justify-content: start;
     align-items: center;
     position: relative;
+    @media ${device.mobile} {
+      padding: 1rem;
+    }
 
     &::after {
       content: "";
@@ -28,6 +37,40 @@ export const ProjectsContainer = styled.section`
       height: 3px;
       width: 30%;
       max-width: 250px;
+    }
+  }
+  p {
+    max-width: 640px;
+    padding: 1rem;
+    letter-spacing: 1.5px;
+    font-weight: 500;
+    margin-bottom: 1rem;
+  }
+`;
+
+export const ProjectsListContainer = styled.nav`
+  position: absolute;
+  top: -4rem;
+  left: 0;
+`;
+
+export const ProjectsList = styled.ul`
+  cursor: pointer;
+  list-style-type: none;
+  display: flex;
+  font-weight: 500;
+  font-size: 22px;
+
+  li {
+    margin: 0 1rem 0 0;
+    border-radius: 50%;
+    background-color: ${theme.pink};
+
+    padding: 0.5rem;
+
+    &:hover {
+      background-color: ${theme.grey};
+      color: ${theme.pink};
     }
   }
 `;

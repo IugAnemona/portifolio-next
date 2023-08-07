@@ -9,7 +9,7 @@ import {
   Sociaislink,
 } from "./styles";
 import { BsFillTelephoneFill, BsBoxArrowUpRight } from "react-icons/bs";
-import { AiFillMail } from "react-icons/ai";
+import { AiFillMail, AiOutlinePlus, AiOutlinePlusSquare } from "react-icons/ai";
 import { BiDownload } from "react-icons/bi";
 import { BsGithub, BsInstagram, BsLinkedin } from "react-icons/bs";
 
