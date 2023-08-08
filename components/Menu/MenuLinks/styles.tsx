@@ -6,18 +6,17 @@ export const RedesContainer = styled.div`
   display: none;
   background-color: ${theme.pink};
   padding: 1rem 3rem 0 1.5rem;
-  position: absolute;
-  top: 0;
-  right: 0;
   z-index: 2000;
   @media ${device.tablet} {
     display: flex;
+    width: 95%;
     padding: 1.5rem;
     position: fixed;
     top: auto;
     bottom: 15px;
-    right: 15px;
-    left: 15px;
+    right: 50%;
+    transform: translateX(50%);
+    max-width: 450px;
     border-radius: 30px;
     align-items: center;
     box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px,

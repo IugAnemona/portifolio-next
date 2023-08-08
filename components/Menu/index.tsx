@@ -49,7 +49,6 @@ export const Menu = () => {
             </S.List>
           </S.Nav>
           <RedesLinks />
-          <MenuLinks />
         </S.Header>
       </GS.WithoutContainer>
     </S.Section>

@@ -11,18 +11,7 @@ export const RedesContainer = styled.div`
   right: 0;
   z-index: 2000;
   @media ${device.mobile} {
-    display: flex;
-    padding: 1.5rem;
-    position: fixed;
-    top: auto;
-    bottom: 15px;
-    right: 15px;
-    left: 15px;
-    border-radius: 30px;
-    align-items: center;
-    box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px,
-      rgba(6, 24, 44, 0.65) 0px 4px 6px -1px,
-      rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+    display: none;
   }
 
   svg {

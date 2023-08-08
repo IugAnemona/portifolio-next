@@ -1,10 +1,9 @@
 import Head from "next/head";
 
-import * as GS from "../styles";
 import { Menu } from "@/components/Menu";
 import { About } from "@/components/AboutSection";
 import { Footer } from "@/components/Footer";
-import { AiOutlinePlus } from "react-icons/ai";
+import { MenuLinks } from "@/components/Menu/MenuLinks";
 
 export default function Page() {
   return (
@@ -14,6 +13,7 @@ export default function Page() {
       </Head>
       <Menu />
       <About />
+      <MenuLinks />
       <Footer />
     </>
   );
