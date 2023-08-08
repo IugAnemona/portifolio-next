@@ -39,6 +39,7 @@ export const VerticalText = styled.div`
   width: 100px;
   top: 50px;
   right: -30px;
+  color: ${theme.blackMain};
 
   @media ${device.mobile} {
     display: none;

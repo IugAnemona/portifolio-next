@@ -37,13 +37,13 @@ export const Menu = () => {
           </S.Logo>
           <S.Nav>
             <S.List>
-              <S.LinkRede href="/">
+              <S.LinkRede scroll={scrolling} href="/">
                 <li>Sobre</li>
               </S.LinkRede>
-              <S.LinkRede href="/projects">
+              <S.LinkRede scroll={scrolling} href="/projects">
                 <li>Projetos</li>
               </S.LinkRede>
-              <S.LinkRede href="/" target="_blank">
+              <S.LinkRede scroll={scrolling} href="/" target="_blank">
                 <li>Projetos</li>
               </S.LinkRede>
             </S.List>

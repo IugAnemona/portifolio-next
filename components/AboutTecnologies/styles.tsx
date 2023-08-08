@@ -56,6 +56,10 @@ export const TechContent = styled.div`
   box-shadow: rgba(235, 122, 122, 0.45) 0px 1px 4px;
   padding: 0.5rem;
 
+  &:hover {
+    color: ${theme.pink};
+  }
+
   @media ${device.tablet} {
     width: 150px;
 

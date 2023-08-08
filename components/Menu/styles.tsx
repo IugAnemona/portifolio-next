@@ -14,8 +14,11 @@ interface ScrollProps {
 
 export const Header = styled.header<ScrollProps>`
   transition: all 1s;
-  background-color: ${(props) => (props.scroll ? theme.grey : theme.blackMain)};
-  border: solid 1px ${(props) => (props.scroll ? theme.pink : theme.blackMain)};
+  background-color: ${(props) =>
+    props.scroll ? theme.pinkTransparent : theme.blackMain};
+  backdrop-filter: blur(7.5px);
+  -webkit-backdrop-filter: blur(7.5px);
+  border-bottom-left-radius: 10px;
   border-top: none;
   width: 100%;
   height: 100%;
@@ -24,8 +27,6 @@ export const Header = styled.header<ScrollProps>`
   padding: 10px 0;
   max-width: 1440px;
   position: relative;
-  border-bottom-left-radius: ${(props) => (props.scroll ? "10px" : 0)};
-  border-bottom-right-radius: ${(props) => (props.scroll ? "10px" : 0)};
 
   @media ${device.mobile} {
     position: static;
@@ -51,7 +52,7 @@ export const Logo = styled(Link)`
   }
 `;
 
-export const LinkRede = styled(Link)`
+export const LinkRede = styled(Link)<ScrollProps>`
   color: ${theme.white};
 
   svg {
