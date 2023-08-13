@@ -23,11 +23,20 @@ export const Title = styled.h1`
 export const InfoContainer = styled.div`
   display: flex;
   background-color: ${theme.grey};
+  flex-wrap: wrap;
 
   img {
     width: 50%;
     height: auto;
     max-width: 300px;
+    min-width: 200px;
+  }
+  @media ${device.mobile} {
+    justify-content: center;
+    img {
+      width: 100%;
+      height: auto;
+    }
   }
 `;
 export const InfoCard = styled.div`
@@ -36,11 +45,20 @@ export const InfoCard = styled.div`
   flex-direction: column;
   padding: 0.25rem;
   position: relative;
-  justify-content: center;
+  justify-content: end;
   align-items: center;
+  min-width: 200px;
+
+  & > div {
+    padding: 0.25rem;
+    width: 100%;
+  }
 
   @media ${device.mobile} {
     justify-content: space-between;
+    & > div {
+      padding: 1rem;
+    }
   }
 `;
 
@@ -60,6 +78,10 @@ export const InfoList = styled.ul`
   line-height: 1.5rem;
   border-top: 1px solid ${theme.pink};
   flex-wrap: wrap;
+
+  @media ${device.mobile} {
+    font-size: 14px;
+  }
   li {
     color: ${theme.pinkShadow};
     padding: 0;
