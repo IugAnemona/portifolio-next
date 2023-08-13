@@ -1,3 +1,4 @@
+import { KusakaKwaApp } from "../KusakaKwaApp";
 import { WeatherApp } from "../WeatherApp";
 import {
   ProjectsContainer,
@@ -19,11 +20,10 @@ export const Projects = () => {
       <h2>WeatherApp</h2>
       <p>
         Aplicativo que permite o usuário pesquisar a atual condições climaticas
-        de qualquer cidade do mundo. Usei Vue.js para receber dados da Weather
-        API transformar em um JSON, manipular os dados do JSON e jogar no DOM do
-        Html.
+        de qualquer cidade do mundo.
       </p>
       <WeatherApp />
+      <KusakaKwaApp />
     </ProjectsContainer>
   );
 };

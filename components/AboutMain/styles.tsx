@@ -7,7 +7,6 @@ export const AboutMainSection = styled.main`
   border-radius: 10px;
   padding: 3rem;
   box-shadow: rgba(235, 122, 122, 0.45) 0px 1px 4px;
-  min-width: 350px;
 `;
 export const AboutMainContent = styled.section`
   display: flex;

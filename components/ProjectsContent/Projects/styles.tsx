@@ -12,7 +12,7 @@ export const ProjectsContainer = styled.section`
   position: relative;
 
   @media ${device.mobile} {
-    padding: 3rem 0;
+    padding: 3rem 0.2rem;
   }
 
   h2 {
@@ -51,7 +51,7 @@ export const ProjectsContainer = styled.section`
 export const ProjectsListContainer = styled.nav`
   position: absolute;
   top: -4rem;
-  left: 0;
+  left: 1rem;
 `;
 
 export const ProjectsList = styled.ul`

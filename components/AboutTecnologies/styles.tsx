@@ -58,6 +58,9 @@ export const TechContent = styled.div`
 
   &:hover {
     color: ${theme.pink};
+    & > span {
+      color: ${theme.white};
+    }
   }
 
   @media ${device.tablet} {

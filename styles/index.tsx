@@ -36,14 +36,20 @@ export const WithoutContainer = styled.div`
 
 export const sectionFullScreen = styled.section`
   min-height: 100vh;
+  width: 100%;
   background-color: ${theme.blackMain};
   padding: 3rem;
   padding-top: 10rem;
-  @media ${device.mobile} {
-    padding: 0;
+
+  @media ${device.tablet} {
+    padding: 1.5rem;
     padding-top: 7rem;
   }
 
+  @media ${device.mobile} {
+    padding: 0.2rem;
+    padding-top: 7rem;
+  }
   @media ${device.desktop} {
     padding: 0rem;
     padding-top: 10rem;

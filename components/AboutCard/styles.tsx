@@ -15,7 +15,6 @@ export const CardContainer = styled.section`
   text-align: center;
   position: relative;
   padding: 3rem 0;
-  min-width: 350px;
 
   img {
     max-width: 270px;
@@ -50,7 +49,6 @@ export const Contacts = styled.section`
   flex-direction: column;
   margin-top: 1.5rem;
   padding: 1rem;
-  min-width: 80%;
   background-color: ${theme.blackMain};
   border-radius: 5px;
 `;
@@ -74,6 +72,7 @@ export const ContactsInfo = styled.div`
 
 export const ContactContent = styled.div`
   display: flex;
+  flex-direction: column;
   width: 100%;
   padding-bottom: 0.8rem;
   margin-bottom: 0.8rem;

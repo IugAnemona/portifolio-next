@@ -28,6 +28,13 @@ export const ApresentationContainer = styled.header`
     span {
       font-size: 50px;
     }
+
+    @media ${device.mobile} {
+      font-size: 30px;
+      span {
+        font-size: 30px;
+      }
+    }
   }
 `;
 

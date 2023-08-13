@@ -4,9 +4,14 @@ import styled from "styled-components";
 export const AboutContainer = styled.div`
   width: 100%;
   display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
   padding-top: 0;
   gap: 3rem;
   max-width: 1440px;
   margin: 0 auto;
+
+  @media ${device.tablet} {
+    flex-direction: column;
+  }
 `;

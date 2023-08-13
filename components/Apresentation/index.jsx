@@ -12,10 +12,9 @@ export const Apresentation = () => {
       </h1>
       <FullContainer>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta
-          doloribus maxime saepe cum error autem et quos est quidem! Adipisci
-          voluptas necessitatibus asperiores similique, voluptates architecto
-          possimus hic veniam ipsum?
+          Como um desenvolvedor Fullstack, possuo habilidades abrangentes tanto
+          na criação de interfaces dinâmicas usando React quanto na construção
+          de servidores backend com Node.js e PHP.
         </p>
       </FullContainer>
       <FullContainer>
