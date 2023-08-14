@@ -3,7 +3,6 @@ import { styled } from "styled-components";
 
 export const CardContainer = styled.section`
   width: 100%;
-  padding: 0.25rem;
   margin: 1.25rem auto;
   background-color: ${theme.greyShadow};
   max-width: 48rem;
@@ -23,16 +22,15 @@ export const Title = styled.h1`
 export const InfoContainer = styled.div`
   display: flex;
   background-color: ${theme.grey};
-  flex-wrap: wrap;
 
   img {
     width: 50%;
     height: auto;
     max-width: 300px;
-    min-width: 200px;
   }
   @media ${device.mobile} {
-    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     img {
       width: 100%;
       height: auto;
@@ -47,25 +45,30 @@ export const InfoCard = styled.div`
   position: relative;
   justify-content: end;
   align-items: center;
-  min-width: 200px;
 
   & > div {
-    padding: 0.25rem;
+    padding: 0 0.25rem;
     width: 100%;
   }
 
   @media ${device.mobile} {
     justify-content: space-between;
     & > div {
-      padding: 1rem;
+      padding: 0 1rem;
     }
   }
 `;
 
 export const Score = styled.span`
+  padding: 1.25rem;
+  margin: 1rem;
+  border-radius: 0.5rem;
+  background-color: ${theme.pink};
   position: absolute;
   top: 0;
   right: 0;
+  font-weight: 700;
+  font-size: 1.5rem;
 
   @media ${device.mobile} {
     position: static;
@@ -80,7 +83,7 @@ export const InfoList = styled.ul`
   flex-wrap: wrap;
 
   @media ${device.mobile} {
-    font-size: 14px;
+    font-size: 16px;
   }
   li {
     color: ${theme.pinkShadow};
@@ -139,7 +142,6 @@ export const Content = styled.div`
 
 export const Input = styled.input`
   width: 70%;
-  text-transform: capitalize;
   background-color: ${theme.grey};
   border: 1px solid ${theme.white};
   border-radius: 10px;

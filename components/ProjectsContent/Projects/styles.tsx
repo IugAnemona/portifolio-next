@@ -5,7 +5,7 @@ export const ProjectsContainer = styled.section`
   width: 100%;
   background-color: ${theme.grey};
   border-radius: 10px;
-  padding: 3rem;
+  padding: 3rem 1rem;
   display: flex;
   flex-direction: column;
   margin-bottom: 3rem;

@@ -10,7 +10,7 @@ export const RedesContainer = styled.div`
   @media ${device.tablet} {
     display: flex;
     width: 95%;
-    padding: 1.5rem;
+    padding: 1rem;
     position: fixed;
     top: auto;
     bottom: 15px;
@@ -60,7 +60,7 @@ export const LinkRede = styled(Link)`
     display: block;
     margin-bottom: 16px;
     @media ${device.tablet} {
-      font-size: 40px;
+      font-size: 34px;
       margin-bottom: 0;
     }
   }

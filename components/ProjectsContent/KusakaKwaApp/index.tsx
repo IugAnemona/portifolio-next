@@ -101,7 +101,7 @@ export const KusakaKwaApp = () => {
         </InfoCard>
       </InfoContainer>
       <SynopsisContainer>
-        <h2>Sinopse:</h2>
+        <h2>Sinopse</h2>
         <p>{apiData.synopsis}</p>
       </SynopsisContainer>
     </CardContainer>
