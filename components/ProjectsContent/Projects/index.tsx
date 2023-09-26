@@ -31,10 +31,10 @@ export const Projects = () => {
 
       {project === 2 ? (
         <>
-          <h2>WeatherApp</h2>
+          <h2>Anime Search App</h2>
           <p>
-            Aplicativo que permite o usuário pesquisar a atual condições
-            climaticas de qualquer cidade do mundo.
+            Aplicativo que permite o usuário pesquisar qual o anime de uma
+            imagem específica, somente colocando o link.
           </p>
           <KusakaKwaApp />
         </>
