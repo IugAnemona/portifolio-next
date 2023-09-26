@@ -1,7 +1,8 @@
 import { device, theme } from "@/styles/theme";
-import { styled } from "styled-components";
+import { keyframes, styled } from "styled-components";
 
 export const CardContainer = styled.section`
+  overflow: hidden;
   width: 100%;
   margin: 1.25rem auto;
   background-color: ${theme.greyShadow};
@@ -16,7 +17,7 @@ export const Title = styled.h1`
   font-weight: 700;
   font-size: 1.5rem;
   padding: 0.75rem;
-  margin: 0.67rem 0;
+  margin: 2rem 0;
 `;
 
 export const InfoContainer = styled.div`
@@ -117,6 +118,9 @@ export const SynopsisContainer = styled.div`
   }
 `;
 export const Content = styled.div`
+  margin: 0 auto;
+  width: 100%;
+  max-width: 768px;
   padding: 3rem 0;
   text-align: center;
   display: flex;
@@ -164,5 +168,29 @@ export const SearchButton = styled.button`
   svg {
     color: ${theme.pink};
     font-size: 20px;
+  }
+`;
+
+export const Loading = styled.div`
+  color: ${theme.pink};
+  font-size: 6rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 5rem;
+
+  .fa-spin {
+    animation: icon-spin 1s infinite linear;
+  }
+
+  @keyframes icon-spin {
+    0% {
+      -webkit-transform: rotate(0deg);
+      transform: rotate(0deg);
+    }
+    100% {
+      -webkit-transform: rotate(359deg);
+      transform: rotate(359deg);
+    }
   }
 `;

@@ -6,6 +6,7 @@ import {
   InfoContainer,
   InfoList,
   Input,
+  Loading,
   Score,
   SearchButton,
   SynopsisContainer,
@@ -14,6 +15,7 @@ import {
 import { useState, useEffect } from "react";
 import traceMoe from "./Api";
 import { FaSearch } from "react-icons/fa";
+import { AiOutlineLoading } from "react-icons/ai";
 
 export const KusakaKwaApp = () => {
   const [apiData, setApiData] = useState<AnimeData | any>("");
@@ -34,9 +36,7 @@ export const KusakaKwaApp = () => {
   }
 
   useEffect(() => {
-    requestApi(
-      "https://www.omegascopio.com.br/wp-content/uploads/2020/03/Zero.jpg"
-    );
+    requestApi("https://media.tenor.com/kX0ysVD23b4AAAAd/a-silent-voice.gif");
   }, []);
 
   async function requestApi(link: string): Promise<void> {
@@ -55,55 +55,59 @@ export const KusakaKwaApp = () => {
   };
 
   return loading ? (
-    <h1> loading</h1>
+    <Loading>
+      <AiOutlineLoading className="fa-spin" />
+    </Loading>
   ) : (
-    <CardContainer>
+    <>
       <Content>
         <Input placeholder="Image Url" onChange={handleChange} />
         <SearchButton onClick={handleClick}>
           <FaSearch />
         </SearchButton>
       </Content>
-      <Title>{apiData.title}</Title>
-      <InfoContainer>
-        <Image
-          loader={({ src }) => src}
-          alt="Anime Image"
-          src={apiData.image}
-          width={300}
-          height={300}
-        ></Image>
-        <InfoCard>
-          <Score>{apiData.score}</Score>
-          <div>
-            <InfoList>
-              <li>
-                Episodes: <span>{apiData.episodes}</span>
-              </li>
-            </InfoList>
-            <InfoList>
-              <li>Genres:</li>
+      <CardContainer>
+        <Title>{apiData.title}</Title>
+        <InfoContainer>
+          <Image
+            loader={({ src }) => src}
+            alt="Anime Image"
+            src={apiData.image}
+            width={300}
+            height={300}
+          ></Image>
+          <InfoCard>
+            <Score>{apiData.score}</Score>
+            <div>
+              <InfoList>
+                <li>
+                  Episodes: <span>{apiData.episodes}</span>
+                </li>
+              </InfoList>
+              <InfoList>
+                <li>Genres:</li>
 
-              {apiData.genres.map((genre: string, i: number, a: string[]) =>
-                i !== a.length - 1 ? (
-                  <span key={i}>{genre}, </span>
-                ) : (
-                  <span key={i}>{genre}.</span>
-                )
-              )}
-            </InfoList>
-            <InfoList>
-              <li>
-                Studio: <span>{apiData.studio}</span>
-              </li>
-            </InfoList>
-          </div>
-        </InfoCard>
-      </InfoContainer>
-      <SynopsisContainer>
-        <h2>Sinopse</h2>
-        <p>{apiData.synopsis}</p>
-      </SynopsisContainer>
-    </CardContainer>
+                {apiData.genres.map((genre: string, i: number, a: string[]) =>
+                  i !== a.length - 1 ? (
+                    <span key={i}>{genre}, </span>
+                  ) : (
+                    <span key={i}>{genre}.</span>
+                  )
+                )}
+              </InfoList>
+              <InfoList>
+                <li>
+                  Studio: <span>{apiData.studio}</span>
+                </li>
+              </InfoList>
+            </div>
+          </InfoCard>
+        </InfoContainer>
+        <SynopsisContainer>
+          <h2>Sinopse</h2>
+          <p>{apiData.synopsis}</p>
+        </SynopsisContainer>
+      </CardContainer>
+    </>
   );
 };

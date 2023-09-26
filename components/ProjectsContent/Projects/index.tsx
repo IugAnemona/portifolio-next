@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { KusakaKwaApp } from "../KusakaKwaApp";
 import { WeatherApp } from "../WeatherApp";
 import {
@@ -7,23 +8,37 @@ import {
 } from "./styles";
 
 export const Projects = () => {
+  const [project, setProject] = useState(1);
+
   return (
     <ProjectsContainer>
       <ProjectsListContainer>
         <ProjectsList>
-          <li>01</li>
-          <li>02</li>
-          <li>03</li>
-          <li>04</li>
+          <button onClick={() => setProject(1)}>01</button>
+          <button onClick={() => setProject(2)}>02</button>
         </ProjectsList>
       </ProjectsListContainer>
-      <h2>WeatherApp</h2>
-      <p>
-        Aplicativo que permite o usuário pesquisar a atual condições climaticas
-        de qualquer cidade do mundo.
-      </p>
-      <WeatherApp />
-      <KusakaKwaApp />
+      {project === 1 ? (
+        <>
+          <h2>WeatherApp</h2>
+          <p>
+            Aplicativo que permite o usuário pesquisar a atual condições
+            climaticas de qualquer cidade do mundo.
+          </p>
+          <WeatherApp />
+        </>
+      ) : null}
+
+      {project === 2 ? (
+        <>
+          <h2>WeatherApp</h2>
+          <p>
+            Aplicativo que permite o usuário pesquisar a atual condições
+            climaticas de qualquer cidade do mundo.
+          </p>
+          <KusakaKwaApp />
+        </>
+      ) : null}
     </ProjectsContainer>
   );
 };

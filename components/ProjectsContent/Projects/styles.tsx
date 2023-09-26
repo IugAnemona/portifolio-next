@@ -56,15 +56,14 @@ export const ProjectsListContainer = styled.nav`
 
 export const ProjectsList = styled.ul`
   cursor: pointer;
-  list-style-type: none;
-  display: flex;
-  font-weight: 500;
-  font-size: 22px;
 
-  li {
+  button {
+    font-weight: 500;
+    font-size: 22px;
     margin: 0 1rem 0 0;
     border-radius: 50%;
     background-color: ${theme.pink};
+    border: none;
 
     padding: 0.5rem;
 
