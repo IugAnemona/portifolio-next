@@ -38,4 +38,9 @@ export const AboutMainContent = styled.section`
     margin-bottom: 1rem;
     line-height: 1.4rem;
   }
+
+  p {
+    font-size: 18px;
+    margin-bottom: 1rem;
+  }
 `;

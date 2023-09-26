@@ -32,22 +32,22 @@ export const AboutCard = () => {
       <Contacts>
         <ContactContent>
           <BsFillTelephoneFill />
+          <h3>Telefone</h3>
           <ContactsInfo>
-            <h3>Telefone</h3>
             <p>(31) 9 9672-1678</p>
           </ContactsInfo>
         </ContactContent>
         <ContactContent>
           <AiFillMail />
+          <h3>E-mail</h3>
           <ContactsInfo>
-            <h3>E-mail</h3>
             <p>guilhermealvescoc@gmail.com</p>
           </ContactsInfo>
         </ContactContent>
         <ContactContent>
           <BsFillTelephoneFill />
+          <h3>Telefone</h3>
           <ContactsInfo>
-            <h3>Telefone</h3>
             <p>(31) 9 9672-1678</p>
           </ContactsInfo>
         </ContactContent>

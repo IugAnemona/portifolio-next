@@ -54,16 +54,10 @@ export const Contacts = styled.section`
 `;
 
 export const ContactsInfo = styled.div`
+  width: 100%;
   text-align: start;
   display: flex;
   flex-direction: column;
-
-  h3 {
-    margin-bottom: 0.4rem;
-    font-size: 0.8rem;
-    font-weight: 800;
-    color: ${theme.pinkTransparent};
-  }
 
   p {
     font-weight: bold;
@@ -71,8 +65,10 @@ export const ContactsInfo = styled.div`
 `;
 
 export const ContactContent = styled.div`
+  align-items: center;
   display: flex;
-  flex-direction: column;
+  /* flex-direction: column; */
+  flex-wrap: wrap;
   width: 100%;
   padding-bottom: 0.8rem;
   margin-bottom: 0.8rem;
@@ -86,6 +82,12 @@ export const ContactContent = styled.div`
     padding: 0.4rem;
     height: 2rem;
     width: 2rem;
+  }
+
+  h3 {
+    font-size: 1rem;
+    font-weight: 800;
+    color: ${theme.pinkTransparent};
   }
 `;
 
