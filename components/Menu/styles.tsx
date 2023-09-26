@@ -69,7 +69,7 @@ export const Nav = styled.nav`
   font-family: "Ubuntu", sans-serif;
   letter-spacing: 0.5px;
   font-size: 18px;
-  font-weight: 300;
+  font-weight: 400;
   flex: 1;
   @media ${device.tablet} {
     display: none;
@@ -81,7 +81,7 @@ export const List = styled.ul`
   list-style: none;
   align-items: center;
   justify-content: center;
-  margin-right: 5rem;
+  margin-right: 6.5rem;
 
   a {
     text-decoration: none;

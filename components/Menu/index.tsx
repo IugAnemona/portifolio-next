@@ -38,13 +38,13 @@ export const Menu = () => {
           <S.Nav>
             <S.List>
               <S.LinkRede scroll={scrolling} href="/">
-                <li>Sobre</li>
+                <li>Home</li>
               </S.LinkRede>
               <S.LinkRede scroll={scrolling} href="/projects">
                 <li>Projetos</li>
               </S.LinkRede>
-              <S.LinkRede scroll={scrolling} href="/" target="_blank">
-                <li>Projetos</li>
+              <S.LinkRede scroll={scrolling} href="/">
+                <li>Sobre Mim</li>
               </S.LinkRede>
             </S.List>
           </S.Nav>
