@@ -37,6 +37,7 @@ export const ApresentationContainer = styled.header`
 `;
 
 export const FullContainer = styled.div`
+  flex-wrap: wrap;
   width: 100%;
   display: flex;
   justify-content: center;

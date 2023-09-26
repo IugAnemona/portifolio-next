@@ -8,11 +8,10 @@ export const ProjectsHeader = () => {
         Projetos <span>Desenvolvidos</span>
       </h1>
       <FullContainer>
+        <p>Alguns dos projetos que fiz sozinho, do código, ao layout.</p>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta
-          doloribus maxime saepe cum error autem et quos est quidem! Adipisci
-          voluptas necessitatibus asperiores similique, voluptates architecto
-          possimus hic veniam ipsum?
+          Atualmente estou estudando Java, e pretendo fazer uma API e um app
+          android.
         </p>
       </FullContainer>
       <FullContainer>
