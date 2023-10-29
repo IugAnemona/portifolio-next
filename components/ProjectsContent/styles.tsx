@@ -20,6 +20,7 @@ export const ProductsMain = styled.section`
   background-color: ${theme.grey};
   border-radius: 10px;
   width: 100%;
+  margin-bottom: 3rem;
 
   h2 {
     font-size: 2.2rem;
