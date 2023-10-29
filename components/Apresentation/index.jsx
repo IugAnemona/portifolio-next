@@ -23,13 +23,14 @@ export const Apresentation = () => {
       </FullContainer>
       <FlexContainer>
         <ButtonLink
-          customClass="pink"
+          customClass="pink margin-top"
           href="https://drive.google.com/file/d/1_Qlrs2Mxarus4StE7lAwNtOvbJnQjLTS/view"
           target="_blank"
         >
           Curriculo
         </ButtonLink>
         <ButtonLink
+          customClass="margin-top"
           href="https://www.linkedin.com/in/guilherme-alves-25109624a/"
           target="_blank"
         >

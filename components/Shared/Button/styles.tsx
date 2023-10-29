@@ -4,7 +4,6 @@ import styled from "styled-components";
 
 export const Button = styled(Link)`
   text-decoration: none;
-  margin-top: 1.5rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -17,7 +16,12 @@ export const Button = styled(Link)`
   font-size: 18px;
 
   &:hover {
-    background-color: ${theme.pinkTransparent};
+    color: ${theme.white};
+  }
+
+  &:active {
+    background-color: ${theme.greyShadow};
+    color: ${theme.pink};
   }
 
   svg {
@@ -33,5 +37,13 @@ export const Button = styled(Link)`
       background-color: ${theme.greyShadow};
       color: ${theme.pink};
     }
+
+    &:hover {
+      background-color: ${theme.pinkTransparent};
+    }
+  }
+
+  &.margin-top {
+    margin-top: 1.5rem;
   }
 `;

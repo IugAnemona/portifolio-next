@@ -1,75 +1,45 @@
 import { device, theme } from "@/styles/theme";
 import { styled } from "styled-components";
 
-export const ProjectsContainer = styled.section`
-  width: 100%;
-  background-color: ${theme.grey};
-  border-radius: 10px;
-  padding: 3rem 1rem;
-  display: flex;
-  flex-direction: column;
+export const Project = styled.div`
+  border-radius: 15px;
   margin-bottom: 3rem;
   position: relative;
 
-  @media ${device.mobile} {
-    padding: 3rem 0.2rem;
+  background-color: ${theme.greyShadow};
+  box-shadow: rgba(235, 122, 122, 0.45) 0px 1px 4px;
+  max-width: 400px;
+`;
+
+export const ImageContainer = styled.div`
+  border-radius: 15px 15px 0 0;
+  padding: 1rem;
+  background-color: ${theme.pinkTransparent};
+
+  img {
+    height: auto;
+    width: 100%;
+  }
+`;
+
+export const ContentContainer = styled.div`
+  padding: 1rem;
+
+  h3 {
+    color: ${theme.pink};
+    text-transform: uppercase;
   }
 
-  h2 {
-    font-size: 2.2rem;
-    margin-bottom: 1.3rem;
-    gap: 1rem;
-    display: flex;
-    justify-content: start;
-    align-items: center;
-    position: relative;
-    @media ${device.mobile} {
-      padding: 1rem;
-    }
-
-    &::after {
-      content: "";
-      background: linear-gradient(
-        90deg,
-        rgba(250, 82, 82, 1) 0%,
-        rgba(221, 36, 118, 1) 100%
-      );
-      height: 3px;
-      width: 30%;
-      max-width: 250px;
-    }
-  }
   p {
-    max-width: 640px;
-    padding: 1rem;
-    letter-spacing: 1.5px;
-    font-weight: 500;
-    margin-bottom: 1rem;
+    font-weight: 300;
   }
 `;
 
-export const ProjectsListContainer = styled.nav`
+export const LinksContainer = styled.div`
+  height: auto;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
   position: absolute;
-  top: -4rem;
-  left: 1rem;
-`;
-
-export const ProjectsList = styled.ul`
-  cursor: pointer;
-
-  button {
-    font-weight: 500;
-    font-size: 22px;
-    margin: 0 1rem 0 0;
-    border-radius: 50%;
-    background-color: ${theme.pink};
-    border: none;
-
-    padding: 0.5rem;
-
-    &:hover {
-      background-color: ${theme.grey};
-      color: ${theme.pink};
-    }
-  }
+  bottom: -4.5rem;
 `;

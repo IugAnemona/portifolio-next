@@ -1,14 +1,24 @@
 import * as GS from "../../styles";
 import { ProjectsHeader } from "./ProjectsHeader";
 import { Projects } from "./Projects";
-import { WeatherApp } from "./WeatherApp";
+import { projectsList } from "@/contents/projects/projectsList";
+import { ProductsMain, ProjectsContainer } from "./styles";
 
-export const ProjectsContainer = () => {
+export const ProjectsContant = () => {
   return (
     <GS.sectionFullScreen>
       <GS.Container>
         <ProjectsHeader />
-        <Projects />
+        <ProductsMain>
+          <h2>Projetos</h2>
+          <p>
+            Nesta seção, você encontrará uma seleção dos meus projetos mais
+            recentes e significativos.
+          </p>
+          <ProjectsContainer>
+            <Projects projects={projectsList} />
+          </ProjectsContainer>
+        </ProductsMain>
       </GS.Container>
     </GS.sectionFullScreen>
   );

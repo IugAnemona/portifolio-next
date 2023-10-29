@@ -1,7 +1,7 @@
 import Head from "next/head";
 
 import { Menu } from "@/components/Menu";
-import { ProjectsContainer } from "../components/ProjectsContent";
+import { ProjectsContant } from "../components/ProjectsContent";
 import { Footer } from "@/components/Footer";
 import { MenuLinks } from "@/components/Menu/MenuLinks";
 
@@ -12,7 +12,7 @@ export default function Page() {
         <title>Guilherme Alves</title>
       </Head>
       <Menu />
-      <ProjectsContainer />
+      <ProjectsContant />
       <MenuLinks />
       <Footer />
     </>

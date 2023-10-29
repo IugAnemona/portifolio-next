@@ -1,4 +1,4 @@
-import { theme } from "@/styles/theme";
+import { device, theme } from "@/styles/theme";
 import styled from "styled-components";
 
 export const AboutMainSection = styled.main`
@@ -7,6 +7,10 @@ export const AboutMainSection = styled.main`
   border-radius: 10px;
   padding: 3rem;
   box-shadow: rgba(235, 122, 122, 0.45) 0px 1px 4px;
+
+  @media ${device.mobile} {
+    padding: 3rem 1rem;
+  }
 `;
 export const AboutMainContent = styled.section`
   display: flex;

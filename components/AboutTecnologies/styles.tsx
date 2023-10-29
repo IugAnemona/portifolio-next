@@ -8,6 +8,10 @@ export const TechnologiesContainer = styled.section`
   border-radius: 10px;
   box-shadow: rgba(235, 122, 122, 0.45) 0px 1px 4px;
   margin-bottom: 3rem;
+
+  @media ${device.mobile} {
+    padding: 3rem 1rem;
+  }
 `;
 export const AboutMainContent = styled.section`
   display: flex;

@@ -3,7 +3,6 @@ import { device, theme } from "../../../styles/theme";
 
 export const ApresentationContainer = styled.header`
   width: 100%;
-  margin-bottom: 4rem;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
