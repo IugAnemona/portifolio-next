@@ -14,11 +14,11 @@ export const Apresentation = () => {
         <p>
           Como um desenvolvedor Fullstack, possuo habilidades abrangentes tanto
           na criação de interfaces dinâmicas usando React quanto na construção
-          de servidores backend com Node.js e PHP.
+          de servidores backend com Node.js.
         </p>
       </FullContainer>
       <FullContainer>
-        <p>Desenvolvedor Web FullStack | React | Node | PHP | Laravel</p>
+        <p>Desenvolvedor Web FullStack | React | Node | SQL | TypeScript</p>
       </FullContainer>
       <FlexContainer>
         <Button

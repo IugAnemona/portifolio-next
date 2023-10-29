@@ -15,7 +15,7 @@ export const ProjectsHeader = () => {
         </p>
       </FullContainer>
       <FullContainer>
-        <p>Desenvolvedor Web FullStack | React | Node | PHP | Laravel</p>
+        <p>Desenvolvedor Web FullStack | React | Node | SQL | TypeScript</p>
       </FullContainer>
     </ApresentationContainer>
   );
