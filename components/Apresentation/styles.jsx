@@ -53,56 +53,6 @@ export const FullContainer = styled.div`
     }
   }
 `;
-export const Button = styled(Link)`
-  text-decoration: none;
-  margin-top: 1.5rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border: none;
-  padding: 15px 20px;
-  background-color: ${theme.pink};
-  color: ${theme.white};
-  border-radius: 30px;
-  font-weight: 500;
-  font-size: 18px;
-
-  &:hover {
-    background-color: ${theme.pinkTransparent};
-  }
-
-  &:active {
-    background-color: ${theme.greyShadow};
-    color: ${theme.pink};
-  }
-
-  svg {
-    font-size: 20px;
-    margin-left: 10px;
-  }
-`;
-
-export const ButtonLink = styled(Link)`
-  text-decoration: none;
-  margin-top: 1.5rem;
-  margin-left: 0.5rem;
-  display: flex;
-  justify-content: center;
-  background-color: transparent;
-  color: ${theme.pink};
-  align-items: center;
-  padding: 10px 15px;
-  font-weight: 500;
-  font-size: 18px;
-  &:hover {
-    color: ${theme.white};
-  }
-
-  svg {
-    font-size: 20px;
-    margin-left: 10px;
-  }
-`;
 
 export const FlexContainer = styled.div`
   display: flex;

@@ -1,7 +1,8 @@
 import { BiDownload } from "react-icons/bi";
-import { Button, ButtonLink, FlexContainer, FullContainer } from "./styles";
+import { FlexContainer, FullContainer } from "./styles";
 import { ApresentationContainer } from "./styles";
 import { BsBoxArrowUpRight } from "react-icons/bs";
+import { ButtonLink } from "../Shared/Button";
 
 export const Apresentation = () => {
   return (
@@ -21,17 +22,18 @@ export const Apresentation = () => {
         <p>Desenvolvedor Web FullStack | React | Node | SQL | TypeScript</p>
       </FullContainer>
       <FlexContainer>
-        <Button
+        <ButtonLink
+          customClass="pink"
           href="https://drive.google.com/file/d/1_Qlrs2Mxarus4StE7lAwNtOvbJnQjLTS/view"
           target="_blank"
         >
-          Curriculo <BsBoxArrowUpRight />
-        </Button>
+          Curriculo
+        </ButtonLink>
         <ButtonLink
           href="https://www.linkedin.com/in/guilherme-alves-25109624a/"
           target="_blank"
         >
-          See Linkedin <BsBoxArrowUpRight />
+          See Linkedin
         </ButtonLink>
       </FlexContainer>
     </ApresentationContainer>
